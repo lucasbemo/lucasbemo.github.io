@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lucasbemo - A developer blog.</title>
+    <link>https://lucasbemo.github.io/</link>
+    <description>Recent content on Lucasbemo - A developer blog.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
+    
+        <atom:link href="https://lucasbemo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://lucasbemo.github.io/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>https://lucasbemo.github.io/about/</guid>
+      
+        <description>&lt;p&gt;&lt;a href=&#34;https://lucaszamboni.com&#34;&gt;Lucas Zamboni&lt;/a&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Hello Reader</title>
+      <link>https://lucasbemo.github.io/post/hello-reader/</link>
+      <pubDate>Thu, 28 Jun 2018 21:05:23 -0300</pubDate>
+      
+      <guid>https://lucasbemo.github.io/post/hello-reader/</guid>
+      
+        <description>&lt;p&gt;Welcome to my personal blog, where you can find &lt;strong&gt;Troubleshooting&lt;/strong&gt;, &lt;strong&gt;How To&amp;rsquo;s&lt;/strong&gt;, &lt;strong&gt;Proposed Solution&lt;/strong&gt; about development and archtecture Softwares.&lt;/p&gt;
+
+&lt;p&gt;My name is Lucas Zamboni and I&amp;rsquo;ve been working with Java and Web Technologies for over 7 years, but I should not be limited to write only about Java Language Stuff.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+  </channel>
+</rss>
