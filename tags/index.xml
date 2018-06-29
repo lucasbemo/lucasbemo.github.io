@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Lucasbemo - A developer blog.</title>
-    <link>http://lucaszamboni.com/tags/</link>
+    <link>https://lucasbemo.github.io/tags/</link>
     <description>Recent content in Tags on Lucasbemo - A developer blog.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 28 Jun 2018 21:05:23 -0300</lastBuildDate>
     
-	<atom:link href="http://lucaszamboni.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://lucasbemo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Greetings</title>
-      <link>http://lucaszamboni.com/tags/greetings/</link>
+      <link>https://lucasbemo.github.io/tags/greetings/</link>
       <pubDate>Thu, 28 Jun 2018 21:05:23 -0300</pubDate>
       
-      <guid>http://lucaszamboni.com/tags/greetings/</guid>
+      <guid>https://lucasbemo.github.io/tags/greetings/</guid>
       <description></description>
     </item>
     
