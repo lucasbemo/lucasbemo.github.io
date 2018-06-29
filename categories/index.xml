@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Lucasbemo&#39;s Blog</title>
-    <link>https://lucasbemo.github.io/categories/</link>
-    <description>Recent content in Categories on Lucasbemo&#39;s Blog</description>
+    <title>Categories on Lucasbemo - A developer blog.</title>
+    <link>http://lucaszamboni.com/categories/</link>
+    <description>Recent content in Categories on Lucasbemo - A developer blog.</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>youremail@domain.com (Some Person)</managingEditor>
-    <webMaster>youremail@domain.com (Some Person)</webMaster>
+    <language>en</language>
     
-	<atom:link href="https://lucasbemo.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://lucaszamboni.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
