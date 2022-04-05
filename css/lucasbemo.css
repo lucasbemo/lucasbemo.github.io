@@ -1,0 +1,57 @@
+.subheading {
+    /* background: #ada8a8ad; */
+    border-radius: 20px;
+    background-clip: border-box;
+    padding: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+    display: inline !important;
+    color: saddlebrown !important;
+}
+
+.sidebar-container .short-about img{
+    width:100%;
+    display:initial !important;
+}
+
+/* Title principal */
+@media only screen and (min-width:400px){
+    .site-heading h1 {
+        font-size: 45px !important;
+    }
+}
+@media only screen and (min-width:900px){
+    .site-heading h1 {
+        font-size: 80px !important;
+    }
+}
+.site-heading h1 {
+    /* font-family: KeeponTruckin !important; */
+    color: honeydew !important;
+}
+
+/* @font-face {
+    font-family: 'KeeponTruckin';
+    src: url('font/the_wildeast/The Wildeast.ttf') format('truetype');
+    src: url('font/8th_element/8thelementbi.ttf') format('truetype');
+} */
+
+article {
+    overflow-x: initial !important; 
+}
+
+/* div.post-heading h1 {
+
+} */
+
+
+/* h2.subheading {
+    background: #ada8a8ad !important;
+    border-radius: 20px;
+    background-clip: border-box;
+    padding: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+    display: inline !important;
+    color: saddlebrown !important;
+} */

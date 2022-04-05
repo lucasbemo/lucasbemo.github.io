@@ -1,24 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Lucasbemo - A developer blog.</title>
-    <link>https://lucasbemo.github.io/tags/</link>
-    <description>Recent content in Tags on Lucasbemo - A developer blog.</description>
+    <title>Tags on Lucas Zamboni Blog</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Lucas Zamboni Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 28 Jun 2018 21:05:23 -0300</lastBuildDate>
-    
-	<atom:link href="https://lucasbemo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Greetings</title>
-      <link>https://lucasbemo.github.io/tags/greetings/</link>
-      <pubDate>Thu, 28 Jun 2018 21:05:23 -0300</pubDate>
-      
-      <guid>https://lucasbemo.github.io/tags/greetings/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
