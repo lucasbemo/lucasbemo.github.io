@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/2022/04/05/hello-reader/</loc>
+    <loc>https://lucasbemo.github.io/2022/04/05/hello-reader/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://lucasbemo.github.io/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://lucasbemo.github.io/post/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/search/placeholder/</loc>
+    <loc>https://lucasbemo.github.io/search/placeholder/</loc>
   </url><url>
-    <loc>http://localhost:1313/top/about/</loc>
+    <loc>https://lucasbemo.github.io/top/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/top/books/</loc>
+    <loc>https://lucasbemo.github.io/top/books/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://lucasbemo.github.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://lucasbemo.github.io/search/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://lucasbemo.github.io/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/top/</loc>
+    <loc>https://lucasbemo.github.io/top/</loc>
   </url>
 </urlset>
