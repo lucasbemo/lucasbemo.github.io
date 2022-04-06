@@ -30,6 +30,32 @@
     color: honeydew !important;
 } */
 
+.site-heading h1 {
+    /* font-family: KeeponTruckin !important; */
+    color: #ffffff !important;
+    background: #000000;
+    border-radius: 40px;
+    background-clip: border-box;
+    padding: 10px;
+    /* padding-left: 9px; */
+    /* padding-right: 9px; */
+    /* display: inline !important; */
+    margin-left: 58px;
+    margin-right: 58px;
+    border-: 17px;
+}
+
+.subheading {
+    background: #1b1b1b70;
+    border-radius: 20px;
+    background-clip: border-box;
+    padding: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+    display: inline !important;
+    color: #ffffff !important;
+}
+
 /* @font-face {
     font-family: 'KeeponTruckin';
     src: url('font/the_wildeast/The Wildeast.ttf') format('truetype');
