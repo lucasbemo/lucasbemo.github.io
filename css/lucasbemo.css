@@ -1,5 +1,5 @@
-.subheading {
-    /* background: #ada8a8ad; */
+/* .subheading {
+    background: #ada8a8ad;
     border-radius: 20px;
     background-clip: border-box;
     padding: 3px;
@@ -12,10 +12,10 @@
 .sidebar-container .short-about img{
     width:100%;
     display:initial !important;
-}
+} */
 
 /* Title principal */
-@media only screen and (min-width:400px){
+/* @media only screen and (min-width:400px){
     .site-heading h1 {
         font-size: 45px !important;
     }
@@ -24,11 +24,11 @@
     .site-heading h1 {
         font-size: 80px !important;
     }
-}
-.site-heading h1 {
-    /* font-family: KeeponTruckin !important; */
+} */
+/* .site-heading h1 {
+    font-family: KeeponTruckin !important;
     color: honeydew !important;
-}
+} */
 
 /* @font-face {
     font-family: 'KeeponTruckin';
@@ -36,9 +36,9 @@
     src: url('font/8th_element/8thelementbi.ttf') format('truetype');
 } */
 
-article {
+/* article {
     overflow-x: initial !important; 
-}
+} */
 
 /* div.post-heading h1 {
 
