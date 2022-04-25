@@ -30,23 +30,36 @@
     color: honeydew !important;
 } */
 
+@font-face {
+    font-family: "et-book";
+    /* src: url("font/Allerta-Regular.ttf"); */
+    src: url("font/Lato/Lato-Black.ttf");
+    /* src: url("font/8th_element/8thelementb2.ttf"); */
+    font-size: 73;
+    font-style: italic
+  }
+
 .site-heading h1 {
     /* font-family: KeeponTruckin !important; */
     color: #ffffff !important;
-    background: #000000;
+    /* background: #00000073; */
+    background: #e197970a;
     border-radius: 40px;
     background-clip: border-box;
     padding: 10px;
-    /* padding-left: 9px; */
-    /* padding-right: 9px; */
+    padding-left: 9px;
+    padding-right: 9px;
     /* display: inline !important; */
-    margin-left: 58px;
-    margin-right: 58px;
+    /* margin-left: 58px; */
+    /* margin-right: 58px; */
     border-: 17px;
+    font-family: et-book !important;
+    font-size: 73px;
 }
 
 .subheading {
-    background: #1b1b1b70;
+    /* background: #1b1b1b70; */
+    background: #e197970a;
     border-radius: 20px;
     background-clip: border-box;
     padding: 3px;
@@ -54,6 +67,7 @@
     padding-right: 9px;
     display: inline !important;
     color: #ffffff !important;
+    font-style: italic;
 }
 
 /* @font-face {
