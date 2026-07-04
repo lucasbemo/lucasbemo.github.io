@@ -1,4 +1,62 @@
 baseURL = "https://lucasbemo.github.io/"
 title = "Lucasbemo's Blog"
 languageCode = "en"
+languageName = "English"
 defaultContentLanguage = "en"
+hasCJKLanguage = false
+
+# Let Hugo generate robots.txt (see Task 5)
+enableRobotsTXT = true
+# Emoji shortcodes like :smile:
+enableEmoji = true
+# Use git commit info for lastmod (works in CI with fetch-depth: 0)
+enableGitInfo = true
+
+# Number of posts per pager
+[pagination]
+  pagerSize = 12
+
+# Taxonomies (singular = plural)
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+  author = "authors"
+
+# Output formats — JSON on home is REQUIRED for local Fuse.js search
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+
+# Markup: syntax highlighting, Goldmark (math passthrough), TOC
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    lineNumbersInTable = true
+    # noClasses MUST be false so DoIt's theme CSS controls colors
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # DoIt relies on raw HTML in content
+      unsafe = true
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    # Passthrough lets KaTeX delimiters survive Markdown processing
+    [markup.goldmark.extensions.passthrough]
+      enable = true
+      [markup.goldmark.extensions.passthrough.delimiters]
+        block = [['\[', '\]'], ['$$', '$$']]
+        inline = [['\(', '\)']]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
