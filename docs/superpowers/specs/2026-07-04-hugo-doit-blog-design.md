@@ -25,6 +25,32 @@ as a GitHub **User Pages** site at `https://lucasbemo.github.io/` via GitHub Act
 > repo named exactly `lucasbemo.github.io`. A project-pages repo would serve under a
 > subpath and require a different `baseURL`.
 
+## Existing repo migration
+
+The repo `github.com/lucasbemo/lucasbemo.github.io` already exists but currently holds
+the **compiled HTML output** of an old Hugo 0.114.1 + CleanWhite-theme site committed
+directly to `master` (classic "deploy from branch"). There is no Hugo source in the
+repo (only branch: `master`).
+
+Decisions:
+
+- **Content:** start completely fresh. The old content (one real post "Hello Reader"
+  2022, plus About/Books placeholder pages) is **not** migrated. New site seeds a
+  sample post + about page.
+- **Repo strategy:** *replace `master` with the Hugo source*. The old rendered site
+  remains recoverable in git history; the working tree becomes source-only.
+- **Deployment model:** single repo, **GitHub Actions**. The repo holds source only.
+  `public/` is git-ignored and **never committed** — Actions builds it on an ephemeral
+  runner, uploads it as a Pages artifact, and GitHub Pages serves that artifact. No
+  second repo, no committed build output.
+- **One-time repo setting:** Settings → Pages → Source must be switched from
+  "Deploy from a branch" to **"GitHub Actions"**.
+- **Local folder:** stays `blog-generator` (cosmetic; unrelated to git remote or Hugo).
+- **Remote wiring:** the local git repo (already `git init`'d) gets
+  `origin = git@github.com:lucasbemo/lucasbemo.github.io` (or HTTPS). Because the local
+  history and the remote `master` history are unrelated, the first push replaces
+  `master` (force-with-lease after confirming the old rendered site is expendable).
+
 ## Architecture & tooling
 
 - **Hugo extended** — required for the theme's SCSS pipeline.
@@ -88,7 +114,7 @@ blog-generator/
 
 `.github/workflows/deploy.yml`:
 
-- Trigger: push to `main` (+ manual `workflow_dispatch`).
+- Trigger: push to `master` (the repo's default branch; + manual `workflow_dispatch`).
 - Steps: checkout → setup Hugo extended (pinned version) → `hugo mod get` →
   `hugo --minify --gc` → upload artifact → `actions/deploy-pages`.
 - Permissions: `pages: write`, `id-token: write`. Concurrency guard on `pages`.
