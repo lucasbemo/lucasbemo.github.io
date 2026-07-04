@@ -1,0 +1,16 @@
+# Hugo build output — NEVER committed (built by CI, served by Pages)
+/public/
+/resources/
+.hugo_build.lock
+
+# Hugo modules cache (if ever vendored locally)
+/_vendor/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local-only Claude settings
+.claude/settings.local.json
+.superpowers/
