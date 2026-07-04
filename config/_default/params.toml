@@ -1,0 +1,129 @@
+# DoIt theme version this config targets
+version = "1.0.X"
+# Default color scheme: "light", "dark", "black", "auto"
+defaultTheme = "auto"
+# Public repo URL — enables "last modified" links (enableGitInfo = true)
+gitRepo = "https://github.com/lucasbemo/lucasbemo.github.io"
+# Date format used across the site
+dateFormat = "2006-01-02"
+# Default Open Graph / Twitter image (add the file in static/images/ later)
+images = ["/images/og-default.png"]
+
+# Site author (shown in footer and article meta)
+[author]
+  name = "Lucasbemo"
+  link = "https://github.com/lucasbemo"
+
+# App / favicon behavior
+[app]
+  title = "Lucasbemo's Blog"
+  noFavicon = false
+
+# Header / nav bar
+[header]
+  themeChangeMode = "select"
+  [header.title]
+    name = "Lucasbemo's Blog"
+    typeit = false
+
+# Footer
+[footer]
+  enable = true
+  hugo = true
+  copyright = true
+  author = true
+  since = 2017
+
+# Home page
+[home]
+  rss = 10
+  [home.profile]
+    enable = true
+    # Add static/images/avatar.png (see README) or set gravatarEmail
+    avatarURL = "/images/avatar.png"
+    title = "Lucasbemo's Blog"
+    subtitle = "Notes on software, systems, and things I'm learning."
+    typeit = true
+    social = true
+  [home.posts]
+    enable = true
+    paginate = 7
+
+# Local search (Fuse.js) — no external service, uses public/index.json
+[search]
+  enable = true
+  type = "fuse"
+  contentLength = 4000
+  placeholder = "Search posts…"
+  maxResultLength = 10
+  snippetLength = 40
+  highlightTag = "em"
+  absoluteURL = false
+  [search.fuse]
+    isCaseSensitive = false
+    minMatchCharLength = 2
+    findAllMatches = false
+    location = 0
+    threshold = 0.1
+    distance = 100
+    ignoreLocation = true
+    useExtendedSearch = false
+    ignoreFieldNorm = false
+
+# Social links shown on the home profile (add more as needed)
+[social]
+  GitHub = "lucasbemo"
+
+# Per-page feature defaults (front matter can override per post)
+[page]
+  # whether to show a link to the raw Markdown source
+  linkToMarkdown = true
+  enableLastMod = true
+  enableWordCount = true
+  enableReadingTime = true
+  [page.toc]
+    enable = true
+    keepStatic = false
+    auto = true
+  [page.code]
+    maxShownLines = 30
+    lineNos = true
+    wrap = false
+    header = true
+    # copy-to-clipboard button is on by default in DoIt's code header
+  [page.math]
+    # Global default off; turn on per-post via front matter `math.enable: true`
+    enable = false
+    copyTex = true
+    mhchem = true
+  [page.mapbox]
+    # unused; left at theme defaults
+  [page.share]
+    enable = true
+    Facebook = false
+    Twitter = true
+    HackerNews = true
+    Linkedin = true
+    Telegram = false
+    Line = false
+
+# SEO
+[seo]
+  image = "/images/og-default.png"
+
+# Search-engine verification tokens (fill in if/when you verify the site)
+[verification]
+  google = ""
+  bing = ""
+
+# Privacy-friendly analytics — DISABLED by default.
+# To enable GoatCounter later: set enable = true and add a [analytics.goatcounter]
+# block per DoIt docs, OR use one of the providers below.
+[analytics]
+  enable = false
+  [analytics.google]
+    id = ""
+    anonymizeIP = true
+  [analytics.plausible]
+    data_domain = ""
+    src = ""
