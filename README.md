@@ -23,6 +23,22 @@ make clean      # remove build artifacts
 The theme is a **Hugo Module** pinned in `go.mod` — there are no git submodules.
 `public/` is generated and **git-ignored**; it is built by CI, never committed.
 
+## Publishing a post
+
+Everyday workflow — write, preview, ship:
+
+```bash
+make new title="my-first-real-post"   # creates a draft from the archetype
+make serve                            # preview at http://localhost:1313
+# edit the post, then set `draft: false` in its front matter when ready:
+git add content
+git commit -m "post: my first real post"
+git push
+```
+
+Pushing to `master` triggers GitHub Actions, which builds the site and deploys it
+to Pages — **live in about a minute**. No manual builds, no committing `public/`.
+
 ## Config
 
 All config lives in `config/_default/`:
@@ -41,7 +57,8 @@ No manual build or upload. One-time setup: **Settings → Pages → Source = "Gi
 
 ## Enabling optional features later
 
-- **Avatar / OG image:** add `static/images/avatar.png` and `static/images/og-default.png`.
+- **OG / social-share image:** add `static/images/og-default.png` (the profile avatar
+  is already set to `static/images/avatar.jpeg`).
 - **Comments (Giscus):** enable GitHub Discussions on the repo, then add a
   `[comment.giscus]` block in `params.toml` per the DoIt docs.
 - **Analytics (GoatCounter/Plausible):** set `[analytics].enable = true` in

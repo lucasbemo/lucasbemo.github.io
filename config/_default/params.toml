@@ -39,8 +39,8 @@ images = ["/images/og-default.png"]
   rss = 10
   [home.profile]
     enable = true
-    # Add static/images/avatar.png (see README) or set gravatarEmail
-    avatarURL = "/images/avatar.png"
+    # Profile photo served from static/images/avatar.jpeg
+    avatarURL = "/images/avatar.jpeg"
     title = "Lucasbemo's Blog"
     subtitle = "Notes on software, systems, and things I'm learning."
     typeit = true
