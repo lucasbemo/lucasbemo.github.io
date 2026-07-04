@@ -259,15 +259,17 @@ hugo --gc
 
 Expected: exits 0 with no errors.
 
-- [ ] **Step 4: Verify the search JSON output format is produced**
+- [ ] **Step 4: Verify the JSON home output format is configured**
 
 Run:
 
 ```bash
-hugo --gc && test -f public/index.json && echo "SEARCH_INDEX_OK"
+hugo --gc && hugo config | grep -i 'home' | grep -i json && echo "JSON_OUTPUT_CONFIGURED"
 ```
 
-Expected: prints `SEARCH_INDEX_OK` (Hugo emitted `public/index.json` because `home` includes `JSON`).
+Expected: prints `JSON_OUTPUT_CONFIGURED` — the resolved config lists `JSON` among the home output formats.
+
+> **Note (cross-task dependency):** The rendered `public/index.json` is **empty until Task 3** enables `[search]` — DoIt's `layouts/index.json` template gates its content behind `params.search`. So this step verifies the output format is *configured*, not that the file is *populated*. The populated index is verified in Task 3 (Fuse wired) and Task 4 (post content indexed).
 
 - [ ] **Step 5: Commit**
 
@@ -433,15 +435,15 @@ hugo --gc
 
 Expected: exits 0. A warning about a missing `avatar.png` image resource is acceptable at this stage (fixed by adding the file or ignored — the site still builds).
 
-- [ ] **Step 3: Verify search is wired to Fuse (not Algolia)**
+- [ ] **Step 3: Verify search is wired to Fuse and the index now renders**
 
 Run:
 
 ```bash
-hugo --gc && grep -q '"' public/index.json && echo "FUSE_INDEX_OK"
+hugo --gc && test -f public/index.json && hugo config | grep -i fuse && echo "FUSE_CONFIGURED_OK"
 ```
 
-Expected: prints `FUSE_INDEX_OK` — `public/index.json` exists and contains the search index JSON that Fuse.js will load client-side.
+Expected: prints the `search.fuse` settings from the resolved config and then `FUSE_CONFIGURED_OK`. Enabling `[search]` makes DoIt's `layouts/index.json` render the file (previously skipped). The file is a valid but **empty `[]`** at this point because there is no content yet — that is expected. The *populated* index (with post text) is verified in Task 4 Step 7.
 
 - [ ] **Step 4: Commit**
 
