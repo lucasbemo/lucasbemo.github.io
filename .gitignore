@@ -3,6 +3,9 @@
 /resources/
 .hugo_build.lock
 
+# Hugo-generated JS module resolution file (machine-specific cache paths)
+/assets/jsconfig.json
+
 # Hugo modules cache (if ever vendored locally)
 /_vendor/
 
