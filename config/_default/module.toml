@@ -1,0 +1,3 @@
+# DoIt theme imported as a Hugo Module (no git submodule).
+[[imports]]
+  path = "github.com/HEIGE-PCloud/DoIt"
