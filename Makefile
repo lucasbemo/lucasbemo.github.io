@@ -1,7 +1,11 @@
-.PHONY: serve new build update clean
+.PHONY: serve serve-drafts new build update clean
 
-# Live preview including drafts at http://localhost:1313
+# Live preview (production-like, drafts hidden) at http://localhost:1313
 serve:
+	hugo server
+
+# Live preview INCLUDING drafts — use while writing a post
+serve-drafts:
 	hugo server -D
 
 # Create a new draft post: make new title="my-post-slug"
