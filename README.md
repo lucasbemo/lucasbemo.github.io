@@ -13,7 +13,8 @@ Personal blog built with [Hugo](https://gohugo.io/) (extended) and the
 ## Local development
 
 ```bash
-make serve      # live preview with drafts at http://localhost:1313
+make serve         # production-like preview (drafts hidden) at http://localhost:1313
+make serve-drafts  # preview INCLUDING drafts — use while writing a post
 make new title="my-post"   # create content/posts/my-post.md from the archetype
 make build      # production build into ./public
 make update     # update the DoIt theme to its latest release
@@ -29,7 +30,7 @@ Everyday workflow — write, preview, ship:
 
 ```bash
 make new title="my-first-real-post"   # creates a draft from the archetype
-make serve                            # preview at http://localhost:1313
+make serve-drafts                     # preview (incl. this draft) at http://localhost:1313
 # edit the post, then set `draft: false` in its front matter when ready:
 git add content
 git commit -m "post: my first real post"
@@ -38,6 +39,27 @@ git push
 
 Pushing to `master` triggers GitHub Actions, which builds the site and deploys it
 to Pages — **live in about a minute**. No manual builds, no committing `public/`.
+
+### Drafts
+
+Any post with `draft: true` in its front matter shows up **locally** under
+`make serve-drafts` (`hugo server -D`) but is **excluded from production** — the
+default `make serve`, `make build`, and the GitHub Actions deploy all run Hugo
+*without* `-D`, so drafts never reach the live site. Use `make serve` to preview
+exactly what will publish; flip `draft: false` and commit when a post is ready.
+
+This repo already ships some drafts: `content/posts/doit-demo/` is third-party
+reference content copied from the DoIt theme's example site. Every post there is
+`draft: true`, so it appears under `make serve-drafts` but never publishes — it's
+kept as a live reference for DoIt shortcodes and post formatting (see
+`content/posts/doit-demo/README.md` for provenance). You can ignore or delete that
+folder without affecting the deployed site.
+
+To list every draft currently in the repo:
+
+```bash
+grep -rl "draft: true" content
+```
 
 ## Config
 
