@@ -2,7 +2,7 @@
 title: "Niche Features Reference (DoIt)"
 date: 2019-12-01T00:00:00+00:00
 draft: true
-hiddenFromHomePage: true
+hiddenFromHomePage: false
 hiddenFromSearch: true
 description: "Syntax reference for DoIt shortcodes not imported as full demo posts."
 tags: ["reference"]

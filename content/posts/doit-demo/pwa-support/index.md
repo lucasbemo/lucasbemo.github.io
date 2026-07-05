@@ -4,7 +4,7 @@ title: "PWA Support"
 date: 2021-05-10T16:21:41+01:00
 lastmod: 2021-05-10T16:21:41+01:00
 draft: true
-hiddenFromHomePage: true
+hiddenFromHomePage: false
 hiddenFromSearch: true
 authors: ["PCloud"]
 description: "Guide to setup PWA in DoIt"

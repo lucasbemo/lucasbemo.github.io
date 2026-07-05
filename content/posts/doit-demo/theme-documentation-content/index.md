@@ -4,7 +4,7 @@ title: "Theme Documentation - Content"
 date: 2020-03-04T15:58:26+08:00
 lastmod: 2020-03-04T15:58:26+08:00
 draft: true
-hiddenFromHomePage: true
+hiddenFromHomePage: false
 hiddenFromSearch: true
 authors: ["Dillon", "PCloud"]
 description: "Find out how to create and organize your content quickly and intuitively in DoIt theme."
