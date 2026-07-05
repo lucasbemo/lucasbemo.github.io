@@ -402,8 +402,11 @@ Draft build clean (no fatal errors). Non-fatal WARNs observed: <list, or 'none'>
 
 **Interfaces:**
 - Consumes: nothing.
-- Produces: provenance/marker file. `README.md` is not a Hugo content page (no front
-  matter, and Hugo ignores `README.md` by default), so it does not affect either build.
+- Produces: provenance/marker file. **Correction (discovered during execution):** Hugo does
+  NOT ignore `README.md` — as a plain content file it renders and publishes at
+  `/posts/doit-demo/readme/`, pushing production to 27. The README therefore carries
+  `_build: {render: never, list: never}` + `draft: true` front matter so Hugo never renders
+  it in any build (no site-config change). Production stays 26.
 
 - [ ] **Step 1: Write the README**
 
