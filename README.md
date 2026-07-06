@@ -37,7 +37,7 @@ git commit -m "post: my first real post"
 git push
 ```
 
-Pushing to `master` triggers GitHub Actions, which builds the site and deploys it
+Pushing to `main` triggers GitHub Actions, which builds the site and deploys it
 to Pages — **live in about a minute**. No manual builds, no committing `public/`.
 
 ### Drafts
@@ -74,7 +74,7 @@ All config lives in `config/_default/`:
 
 ## Deployment
 
-Push to `master` → GitHub Actions builds with Hugo and deploys to Pages.
+Push to `main` → GitHub Actions builds with Hugo and deploys to Pages.
 No manual build or upload. One-time setup: **Settings → Pages → Source = "GitHub Actions"**.
 
 ## Enabling optional features later
